@@ -14,19 +14,18 @@ class BankAccount
   end
 
   def deposit(x)
-      @balance = balance + x
+      @balance = @balance + x
       return @balance
   end
 
   def withdraw(y)
-    @balance = balance - y
+    @balance = @balance - y
     return @balance
   end
 
   def gain_interest
-    @balance = balance * interest_rate.to_f
+    @balance = @balance * interest_rate.to_f
     return @balance
-    return
   end
 end
   Davesbankaccount = BankAccount.new(50, 1.02)
